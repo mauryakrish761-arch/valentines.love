@@ -1,0 +1,140 @@
+* {
+
+    smargin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    font-family: 'Dancing Script',cursive;
+    background:linear-gradient(135deg,#ffafbd,#ffc3a0,#d4bfff);
+    background-size:400% 400%;
+    animation:bgAnim 10s ease infinite;
+}
+
+/*🎵Music button*/
+#musicToggle {
+    position:fixed;
+    top:20px;
+    right:20px;
+    font-size:26px;
+    cursor:pointer;
+    z-index:10;
+}
+
+
+/*🌸Wrapper*/
+.wrapper {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    color:white;
+    text-shadow:0 0 12px
+    rgba(255,255,255,0.6);
+}
+/*Story*/
+#storyText{
+    font-size:30px;
+    min-height:120px;
+    animation:fadeIn Is ease;
+}
+
+@keyframes fadeIn {
+    from { opacity:0;transform:translateY(10px);}
+    to { opacity:1;transform:translateY(0);}
+}
+
+/* Mini Question*/
+.mini-question{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.mini-btn{
+    padding:12px 26px;
+    font-size:18px;
+    border-radius:25px;
+    background:white;
+    color:#ff4d6d;
+    cursor:pointer;
+}
+
+/*💕Valentine*/
+#valentineBox h1 {
+    font-size:38px;
+    margin-bottom:20px
+}
+
+.btn-group {
+    display:flex;
+    gap:20px;
+}
+
+button {
+    font-family:inherit;
+}
+
+/*YES*/
+#yesBtn {
+    padding:14px 32px;
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:20px;
+    box-shadow:0 0 20px #ff4d6d;
+    animation:pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+    0%{transform:scale(1);}
+    50%{transform:scale(1.12);}
+    100%{transform:scale(1);}
+}
+
+/*NO*/
+#noBtn{
+    padding:14px 32px;
+    background:white;
+    color:#ff4d6d;
+    border:none;
+    border-radius:30px;
+    font-size:20px;
+    position:relative;
+}
+
+/*🎉Success*/
+#successBox {
+    font-size: 30px;
+}
+
+.ps {
+    font-size: 18px;
+    opacity:0.9;
+}
+
+/*💗Hearts*/
+.heart-container::before {
+    content:"❤️💖💕💓💗💜";
+    position:fixed;
+    width:100%;
+    height:100%;
+    font-size:22px;
+    animation:floatHearts 18s linear infinite;
+    opacity:0.4;
+}
+
+@keyframes floatHearts {
+    from{transform:translateY(100%);}
+    to{transform:translateY(-100%);}
+}
+
+.hidden{
+    display:none;
+}
